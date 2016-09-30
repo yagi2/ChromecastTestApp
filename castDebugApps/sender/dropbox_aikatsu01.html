@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cast Sender[Dropbox host]</title>
+    <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+    <script type="text/javascript" src="js/sender.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Cast Sender</h1>
+
+        以下にキャストするファイル（http(s)ホスト)のURLを貼り付けてください。<br> 
+        mediaType default :(video/mp4)<br> 
+        参考 : <a href="https://developers.google.com/cast/docs/media">https://developers.google.com/cast/docs/media</a><br>
+
+        <br><br>
+
+        FileURL : <input type="text" size="70" id="url" value="https://dl.dropboxusercontent.com/s/tljl755j7vminn0/%E3%82%A2%E3%82%A4%E3%82%AB%E3%83%84!%20-%2001.mp4"></input><br>        
+        MediType: <input type="text" size="70" id="mediaType" value="video/mp4"></input><br>
+        Title(optional): <input type="text" size="70" id="title" value="アイカツ！"></input><br>
+        SubTitle(optional): <input type="text" size="70" id="subtitle" value="第1話 私がアイドルになっても？"></input><br>
+        ImageURL(optional): <input type="text" size="70" id="image" value="http://www.aikatsu.net/03/images/top_logo.png"></input><br>
+
+        <br>
+
+        <input type="button"" onclick="cast()" value="Cast" id="castButton" disabled></input>
+
+        <br><br>
+
+        <div id="message"></div>
+    </div>
+</body>
+
+</html>
